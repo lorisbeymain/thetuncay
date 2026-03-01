@@ -1,1 +1,137 @@
 
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TheTuncay Tribute</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #00ff88 0%, #000 70%);
+}
+
+header h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 20px #00ff88;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #00ff88;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,255,136,0.3);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 15px 30px;
+    background: #00ff88;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #00cc6a;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    background: #000;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>TheTuncay</h1>
+        <p>Bir Efsanenin Yayın Yolculuğu 🎮</p>
+        <button onclick="scrollToContent()">Anılara Git</button>
+    </div>
+</header>
+
+<section id="content">
+    <h2 class="section-title">Unutulmaz Anlar</h2>
+
+    <div class="card">
+        <h3>İlk Yayın Heyecanı</h3>
+        <p>O gün belki küçük bir yayındı ama büyük bir başlangıçtı.</p>
+    </div>
+
+    <div class="card">
+        <h3>Efsane Rage Anı</h3>
+        <p>Chat çıldırdı, klipler uçtu, tarih yazıldı.</p>
+    </div>
+
+    <div class="card">
+        <h3>En Duygusal An</h3>
+        <p>Topluluğun ne kadar güçlü olduğunu gösteren an.</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Sana Mesajım</h2>
+    <div class="card">
+        <p>
+        Bu site sadece bir doğum günü hediyesi değil.  
+        Yayınlarınla insanlara dokunduğun her anın küçük bir hatırası.
+        İyi ki varsın 🎂
+        </p>
+    </div>
+</section>
+
+<footer>
+    Hazırlayan: [Senin İsmin] | 2026
+</footer>
+
+<script>
+function scrollToContent() {
+    document.getElementById("content").scrollIntoView({behavior: "smooth"});
+}
+</script>
+
+</body>
+</html>
